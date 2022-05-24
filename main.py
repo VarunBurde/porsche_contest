@@ -20,7 +20,7 @@ if __name__ == '__main__':
         img = None
         collision = colision_chk.check_collision()
         sign = sign_obj.sign(img)
-        angle, speed = lane_obj.find_angle_speed(image=)
+        angle, speed = lane_obj.find_angle_speed(image=img)
 
         if not collision and not sign:
             drive_obj.turn_by_angle_and_speed(angle, speed)
